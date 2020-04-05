@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mcfam-systems",
+  "private_key_id": "2ae2a0f0f5fae414e768cb913e861c2a4e87da68",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCrruG3ev8yIyOm\n6W0FBwiRHrDU5TjMFNQYXXYJqLuDxTHzQ27ANgKBEVl0w/xnI0UsPuLJwNerlCu/\nI1diP4SkfPnQ3FA4xpXDtfiB2+YdaO9EQKCfIJ6VGM2N1PJSQuS9Dx5b7U7m1Mmn\niWxnX6NHaymJgiyPEnHnaLBP4/cWeD32qC/iOTR6bwMNoFSEzA/T66RdgtmWKnCd\n7hIC2dvGd5359udzvJhUT7d7rlKIjGDDtjcojf4QJ7CaUBpOqVJ4gCIwThhUBFUJ\nbbDKFWwI/+7HduW/DZC9ZqMeNoTlWYntnp1EA44XLpXK7SWi9APNdGCdXlKJ4sZX\nn0XBT4QDAgMBAAECggEAB04LG5f3qMX2++Cdu2OHuUkBhCV2q7RNK/Y6EgIkbGBl\nFjEt0q7Zn21CDaZTJH5LMK1CUAxNAOdujxTtYGhMeAU7Seg935SPhcLF3pyhJ2oy\nGAjZ7LtiE/z4rgq7/sUK34J3q7imrUqrg93kh2d51o2YOFoaFEJYJ1z8d4G/Hy0P\nloUWUAXzrS3733abeRVjqdyWUp3KNOVNRhkf6aSicurGOplSClPMP2VJ/X3ecitv\nI9KXJhKKsJpPa+vvvVLNA3jMVBQ33h02ciy8n6hQnr71sbeZrgf2+VZclivz3h9t\nCcmz9sJsHgmll4f4JwWTAic8UIwxZWhL3rN94CpN7QKBgQDtwyuNDbc3iEC+EpHS\nbQ8zrUxQisxMqB5Yx0vk1i8vJOO99UGQRk6eYVZd3z4mILICahgoKJ+txuqfqzD8\n/Z/HdFSfhEZ0LxubyFQohKBuFjE+y6rWPL81YUvoLc5CkYlQh9EaoEcyt3MGkkHM\nM/2X9dAiKAexr2i8naki0kEixQKBgQC42iTW368L2jRqZXYSHkTBaZJR7CIGdqc6\npFVVi1wgTTARpqYiSKoxqElqP392/oRdOY5cykDG4rzPuxSuBjZEcEnTGuGAN7jL\nq/HYSiUMuTzn1MCvpuCaT4rJNjjKvl9tHEpMBMjmU1CMUCp7uUIoe2aB9JSOb+sp\nuI0akKnYJwKBgCYfQQBgzpus0RSozZC7w9A5XR8c4hz4Z8U8T0LlxLL+azWt+VE0\ntK5YVQzAGqrqWyBf+neV6+RlHIF1ZWlrEQ9d66OYBePjGb4kpLnKah68mDDFXyLy\nooXgj9cuYP/zbdznqfNm94N+PoczNDGVtHeFBlYzrOgkg9qaPOBEbgUxAoGAHUfI\noBSseJcmyFer/TC4OV7Mo5dgyF9RG/Pd5H//psozPAiGtlWGR/ldL6xBN4sXUmEE\nkOQkoJxXxhvfKbWoMO0MdJkEcTfiWLiyxUzxU3OgFyTXJLutRiQlWrvxAQRovzLE\n/gef/wPhdWhZYmG0/g6V7S3dvjYyLNij2Tpi/O8CgYEAzuhRPEmIXhXvdkM976Yh\n4mU75WgH86XxCFIjC/u0zoRkuln36WgGhg/r9fPHqw3Iyf0iBn0oEyWa5fFF47ud\nb5zVVBgKbR6GioqdC9P+uwM2T+uvy9IcQ+iZwsZ2kuHuGOIl3+ax40jHHjTmqeN1\nKgW3vxVvzwiQT6UtiKxvfRY=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dev-558@mcfam-systems.iam.gserviceaccount.com",
+  "client_id": "111407318024330002944",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dev-558%40mcfam-systems.iam.gserviceaccount.com"
+}
