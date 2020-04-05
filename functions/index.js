@@ -92,17 +92,17 @@ exports.computeRating = functions.https.onRequest( async (req, res) => {
 
         const uid = req.body.uid;
 
-        let snapshot = await firestore.collection("transaction")
+        let getRatings = await firestore.collection("transaction")
             .where("agentUid", "==", uid)
             .where("isCompleted", "==", true)
             .get();
 
-        let arrayRatings = snapshot.docs.map(doc => doc.data().rating)
+        let arrayRatings = getRatings.docs.map(doc => doc.data().rating)
         let sumRatings = arrayRatings.reduce((previous, current) => current += previous);
         let avgRatings = Math.floor(sumRatings / arrayRatings.length);
 
-        let snapshot2 = await firestore.collection("broker").where("uid", "==", uid).get();
-        let docId = snapshot2.docs.map(doc => doc.id);
+        let getDocID = await firestore.collection("broker").where("uid", "==", uid).get();
+        let docId = getDocID.docs.map(doc => doc.id);
            
         firestore.collection("broker").doc(docId[0]).update({
             aveRating : avgRatings
