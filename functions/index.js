@@ -27,6 +27,7 @@ let transporter = nodemailer.createTransport({
 
 // TODO: Upgrade to use 0AUTH2
 exports.sendMail = functions.https.onRequest((req, res) => {
+    console.log(req.body);
     cors(req, res, () => {
 
         if (!req.body.subject || !req.body.message) {
@@ -37,6 +38,8 @@ exports.sendMail = functions.https.onRequest((req, res) => {
               }
             });
         }
+
+        console.log(req.body);
 
         const mailOptions = {
             from: 'MCFAM Realty  <mcfamrealty.is@gmail.com>',
@@ -80,34 +83,25 @@ exports.terminateUser = functions.https.onRequest((req, res) => {
 });
 
 exports.computeRating = functions.https.onRequest( async (req, res) => {
-   
-        if (!req.body.uid) {
-            return res.status(422).send({
-              error: {
-                code: 422,
-                message: "Missing arguments"
-              }
-            });
-        }
 
-        const uid = req.body.uid;
-
+        let uid = req.query.uid;
         let getRatings = await firestore.collection("transaction")
             .where("agentUid", "==", uid)
             .where("isCompleted", "==", true)
             .get();
 
-        let arrayRatings = getRatings.docs.map(doc => doc.data().rating)
+        let arrayRatings = getRatings.docs.map(doc => doc.data().rating);
         let sumRatings = arrayRatings.reduce((previous, current) => current += previous);
         let avgRatings = Math.floor(sumRatings / arrayRatings.length);
 
+       
         let getDocID = await firestore.collection("broker").where("uid", "==", uid).get();
         let docId = getDocID.docs.map(doc => doc.id);
            
         firestore.collection("broker").doc(docId[0]).update({
             aveRating : avgRatings
-        })
-        return res.send("ok")
+        });
+        return res.send("ok");
 
 });
 
